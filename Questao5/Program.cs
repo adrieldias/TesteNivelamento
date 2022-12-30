@@ -31,7 +31,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(opt =>
 {
-    opt.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoAPI", Version = "v1" });
+    opt.SwaggerDoc("v1", new OpenApiInfo { Title = "Movimentação de Conta Corrente", Version = "v1" });
 
     var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
